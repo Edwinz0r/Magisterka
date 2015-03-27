@@ -1,0 +1,25 @@
+﻿Build started 2015-03-26 13:49:08.
+     1>Project "D:\ProjectsVS\magisterka\Capture\Capture\Capture.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\OpenCV-2.4.2\opencv\build\include\opencv" /I"C:\OpenCV-2.4.2\opencv\build\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Release\Capture.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\OpenCV-2.4.2\opencv\build\include\opencv" /I"C:\OpenCV-2.4.2\opencv\build\include" /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Release\Capture.pch" /Fo"x64\Release\\" /Fd"x64\Release\vc110.pdb" /Gd /TP /errorReport:prompt Capture.cpp RecorderRunAvg.cpp recorder.cpp recorderGMM.cpp
+         Capture.cpp
+         RecorderRunAvg.cpp
+     1>RecorderRunAvg.cpp(43): warning C4101: 'filename2' : unreferenced local variable
+         recorder.cpp
+         recorderGMM.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ProjectsVS\magisterka\Capture\x64\Release\Capture.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\OpenCV-2.4.2\opencv\build\x64\vc10\lib" opencv_core242.lib opencv_imgproc242.lib opencv_highgui242.lib opencv_ml242.lib opencv_video242.lib opencv_features2d242.lib opencv_calib3d242.lib opencv_objdetect242.lib opencv_contrib242.lib opencv_legacy242.lib opencv_flann242.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\ProjectsVS\magisterka\Capture\x64\Release\Capture.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ProjectsVS\magisterka\Capture\x64\Release\Capture.lib" /MACHINE:X64 x64\Release\Capture.obj
+         x64\Release\recorder.obj
+         x64\Release\recorderGMM.obj
+         x64\Release\RecorderRunAvg.obj
+         x64\Release\stdafx.obj
+         Generating code
+         Finished generating code
+         Capture.vcxproj -> D:\ProjectsVS\magisterka\Capture\x64\Release\Capture.exe
+     1>Done Building Project "D:\ProjectsVS\magisterka\Capture\Capture\Capture.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:08.65

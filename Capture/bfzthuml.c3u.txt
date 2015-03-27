@@ -1,0 +1,60 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#	new file:   Capture.sdf
+#	new file:   Capture.sln
+#	new file:   Capture.v11.suo
+#	new file:   Capture/Capture.cpp
+#	new file:   Capture/Capture.vcxproj
+#	new file:   Capture/Capture.vcxproj.filters
+#	new file:   Capture/CaptureBackUp.cpp
+#	new file:   Capture/ReadMe.txt
+#	new file:   Capture/RecorderRunAvg.cpp
+#	new file:   Capture/recorder.cpp
+#	new file:   Capture/recorder.h
+#	new file:   Capture/recorderGMM.cpp
+#	new file:   Capture/recorderGMM.h
+#	new file:   Capture/recorderRunAvg.h
+#	new file:   Capture/stdafx.cpp
+#	new file:   Capture/stdafx.h
+#	new file:   Capture/targetver.h
+#	new file:   Capture/x64/Release/CL.read.1.tlog
+#	new file:   Capture/x64/Release/CL.write.1.tlog
+#	new file:   Capture/x64/Release/Capture.Build.CppClean.log
+#	new file:   Capture/x64/Release/Capture.lastbuildstate
+#	new file:   Capture/x64/Release/Capture.log
+#	new file:   Capture/x64/Release/Capture.obj
+#	new file:   Capture/x64/Release/Capture.pch
+#	new file:   Capture/x64/Release/RecorderRunAvg.obj
+#	new file:   Capture/x64/Release/cl.command.1.tlog
+#	new file:   Capture/x64/Release/link-cvtres.read.1.tlog
+#	new file:   Capture/x64/Release/link-cvtres.write.1.tlog
+#	new file:   Capture/x64/Release/link-rc.read.1.tlog
+#	new file:   Capture/x64/Release/link-rc.write.1.tlog
+#	new file:   Capture/x64/Release/link.command.1.tlog
+#	new file:   Capture/x64/Release/link.read.1.tlog
+#	new file:   Capture/x64/Release/link.write.1.tlog
+#	new file:   Capture/x64/Release/recorder.obj
+#	new file:   Capture/x64/Release/recorderGMM.obj
+#	new file:   Capture/x64/Release/stdafx.obj
+#	new file:   Capture/x64/Release/vc110.pdb
+#	new file:   ipch/capture-676d91b/capture-159a6db8.ipch
+#	new file:   ipch/capture-676d91b/capture-33ccda3e.ipch
+#	new file:   ipch/capture-676d91b/capture-a9229c40.ipch
+#	new file:   x64/Release/Capture.exe
+#	new file:   x64/Release/Capture.pdb
+#	new file:   x64/Release/opencv_core242.dll
+#	new file:   x64/Release/opencv_highgui242.dll
+#	new file:   x64/Release/opencv_imgproc242.dll
+#
+# Untracked files:
+#	Capture/mask_1.avi
+#	Capture/movement_1.avi
+#	x64/Release/movement_13.avi
+#
+
