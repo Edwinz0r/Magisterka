@@ -3,7 +3,7 @@
 // author: Tomasz Wieczorek
 
 #include "stdafx.h"
-
+using namespace cv;
 RecorderRunAvg::RecorderRunAvg(): Recorder(0){
 
 	cap.set(CV_CAP_PROP_FRAME_WIDTH,768);
@@ -36,7 +36,7 @@ RecorderRunAvg::RecorderRunAvg(std::string filename): Recorder(filename){
 	 double alpha=0.2;
 	 double beta=1-alpha;
 	 bool movement=false;
-	 Scalar amount_of_mov_pixels;
+	 Scalar amountOfMovPix;
 
 	 VideoWriter mov,mask;
 	 Size frS(768,576);
@@ -56,7 +56,7 @@ RecorderRunAvg::RecorderRunAvg(std::string filename): Recorder(filename){
 		 cvtColor(next_frame, next_frame, CV_BGR2GRAY);
 		 //absdiff(curr_frame_gray, prev_frame , d1);
 
-		 amount_of_mov_pixels=count_moving_pixels(next_frame, curr_frame, prev_frame,fgMask);
+		 amountOfMovPix=countMovingPixels(next_frame, curr_frame, prev_frame,fgMask);
 		 imshow("stream",curr_frame);
 
 		 curr_frame.copyTo(prev_frame);
@@ -64,12 +64,12 @@ RecorderRunAvg::RecorderRunAvg(std::string filename): Recorder(filename){
 		 if(waitKey(30) >= 0) break;
 
 		 // Nagrywanie filmu
-		 if( *(amount_of_mov_pixels.val) > 70000)
+		 if( *(amountOfMovPix.val) > 70000)
 		 {
 
 			 // Inicjalizacja plikow zapisu filmow
 			 sprintf(filename1,"movement_%d.avi",a);
-			 while(exists_test(filename1))
+			 while(existsTest(filename1))
 			 {
 				 a++;
 				 sprintf(filename1,"movement_%d.avi",a);
@@ -77,7 +77,7 @@ RecorderRunAvg::RecorderRunAvg(std::string filename): Recorder(filename){
 			 mov.open(filename1, Def::CODEC, 24 ,frS); //CV_FOURCC('X','V','I','D')
 			 movement=true;
 			 //            sprintf(filename2,"mask_%d.avi",b);
-			 //            while(exists_test(filename2))
+			 //            while(existsTest(filename2))
 			 //            {
 			 //                b++;
 			 //                sprintf(filename2,"mask_%d.avi",b);
@@ -93,7 +93,7 @@ RecorderRunAvg::RecorderRunAvg(std::string filename): Recorder(filename){
 				 cap >> next_frame; // get a new frame from camera
 				 if (next_frame.empty()) break;
 				 cvtColor(next_frame, next_frame, CV_BGR2GRAY);
-				 amount_of_mov_pixels=count_moving_pixels(next_frame, curr_frame, prev_frame,fgMask);
+				 amountOfMovPix=countMovingPixels(next_frame, curr_frame, prev_frame,fgMask);
 
 				 imshow("stream",curr_frame);               
 				 cvtColor(curr_frame, curr_frame_rgb, CV_GRAY2BGR);
@@ -105,7 +105,7 @@ RecorderRunAvg::RecorderRunAvg(std::string filename): Recorder(filename){
 				 next_frame.copyTo(curr_frame);
 				 if(waitKey(30) >= 0) break;
 				 j++;
-				 if( *(amount_of_mov_pixels.val) > 30000) j=0;
+				 if( *(amountOfMovPix.val) > 30000) j=0;
 				 if (j>60) movement=false;
 			 }
 			 a++;

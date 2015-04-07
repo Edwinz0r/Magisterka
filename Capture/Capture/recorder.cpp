@@ -24,7 +24,7 @@ Recorder::Recorder(std::string filename): cap(filename){
     cap.set(CV_CAP_PROP_FRAME_HEIGHT,576);
 }
 
- inline bool Recorder::exists_test(const std::string & name){
+ inline bool Recorder::existsTest(const std::string & name){
     if (FILE *file = fopen(name.c_str(), "r"))
     {
         fclose(file);
@@ -36,7 +36,7 @@ Recorder::Recorder(std::string filename): cap(filename){
     }
 }
 
- Scalar Recorder::count_moving_pixels(Mat & next_frame, Mat & curr_frame, Mat & prev_frame, Mat & fgMask){
+ Scalar Recorder::countMovingPixels(Mat & next_frame, Mat & curr_frame, Mat & prev_frame, Mat & fgMask){
 		Mat d1,d2;
 	
 		absdiff(prev_frame, next_frame, d1);
@@ -45,8 +45,8 @@ Recorder::Recorder(std::string filename): cap(filename){
 
         threshold(fgMask, fgMask,25,255,CV_THRESH_BINARY);
 
-//        addWeighted( curr_frame, alpha, prev_back, beta, 0.0, back);
-//        absdiff(curr_frame, back, fgMask);
+//        addWeighted( curr_frame, alpha, prev_bgnd, beta, 0.0, bgnd);
+//        absdiff(curr_frame, bgnd, fgMask);
 //        threshold(fgMask, fgMask,30,255,CV_THRESH_BINARY);
 		cvtColor(fgMask, fgMask, CV_GRAY2BGR);
            //medianBlur(fgMask,fgMask,1);
