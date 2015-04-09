@@ -17,7 +17,7 @@
 //user defined header files
 #include "recorder.h"
 #include "recorderGMM.h"
-#include "recorderRunAvg.h"
+//#include "recorderRunAvg.h"
 
 namespace Def{
 const int CODEC=0;

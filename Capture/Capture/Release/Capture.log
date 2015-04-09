@@ -1,0 +1,46 @@
+﻿Build started 2015-03-31 10:59:36.
+     1>Project "D:\ProjectsVS\magisterka\Capture\Capture\Capture.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Id:\OpenCV\opencv\build\include\opencv\ /Ic:\boost_1_55_0\ /Id:\OpenCV\opencv\build\include\ /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\Capture.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Id:\OpenCV\opencv\build\include\opencv\ /Ic:\boost_1_55_0\ /Id:\OpenCV\opencv\build\include\ /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Capture.cpp recorder.cpp recorderGMM.cpp RecorderGMMTest.cpp RecorderRunAvg.cpp
+         Capture.cpp
+         recorder.cpp
+         recorderGMM.cpp
+         RecorderGMMTest.cpp
+         RecorderRunAvg.cpp
+     1>RecorderRunAvg.cpp(43): warning C4101: 'filename2' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\ProjectsVS\magisterka\Capture\Release\Capture.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:d:\OpenCV\opencv\build\x86\vc11\lib\ /LIBPATH:C:\boost_1_55_0\stage\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\ProjectsVS\magisterka\Capture\Release\Capture.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\ProjectsVS\magisterka\Capture\Release\Capture.lib" /MACHINE:X86 /SAFESEH Release\Capture.obj
+         Release\recorder.obj
+         Release\recorderGMM.obj
+         Release\RecorderGMMTest.obj
+         Release\RecorderRunAvg.obj
+         Release\stdafx.obj
+     1>Capture.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall cv::VideoCapture::~VideoCapture(void)" (??1VideoCapture@cv@@UAE@XZ)
+     1>recorder.obj : error LNK2001: unresolved external symbol "void __cdecl cv::absdiff(class cv::_InputArray const &,class cv::_InputArray const &,class cv::_OutputArray const &)" (?absdiff@cv@@YAXABV_InputArray@1@0ABV_OutputArray@1@@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "public: __thiscall cv::_InputArray::_InputArray(class cv::Mat const &)" (??0_InputArray@cv@@QAE@ABVMat@1@@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "void __cdecl cv::fastFree(void *)" (?fastFree@cv@@YAXPAX@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "class cv::_OutputArray const & __cdecl cv::noArray(void)" (?noArray@cv@@YAABV_OutputArray@1@XZ)
+     1>recorder.obj : error LNK2001: unresolved external symbol "public: void __thiscall cv::Mat::deallocate(void)" (?deallocate@Mat@cv@@QAEXXZ)
+     1>recorder.obj : error LNK2001: unresolved external symbol "int __cdecl cv::_interlockedExchangeAdd(int *,int)" (?_interlockedExchangeAdd@cv@@YAHPAHH@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "public: __thiscall cv::_OutputArray::_OutputArray(class cv::Mat &)" (??0_OutputArray@cv@@QAE@AAVMat@1@@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "double __cdecl cv::threshold(class cv::_InputArray const &,class cv::_OutputArray const &,double,double,int)" (?threshold@cv@@YANABV_InputArray@1@ABV_OutputArray@1@NNH@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "class cv::Scalar_<double> __cdecl cv::sum(class cv::_InputArray const &)" (?sum@cv@@YA?AV?$Scalar_@N@1@ABV_InputArray@1@@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "public: __thiscall cv::VideoCapture::VideoCapture(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (??0VideoCapture@cv@@QAE@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "public: __thiscall cv::VideoCapture::VideoCapture(int)" (??0VideoCapture@cv@@QAE@H@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "void __cdecl cv::bitwise_and(class cv::_InputArray const &,class cv::_InputArray const &,class cv::_OutputArray const &,class cv::_InputArray const &)" (?bitwise_and@cv@@YAXABV_InputArray@1@0ABV_OutputArray@1@0@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "void __cdecl cv::cvtColor(class cv::_InputArray const &,class cv::_OutputArray const &,int,int)" (?cvtColor@cv@@YAXABV_InputArray@1@ABV_OutputArray@1@HH@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "void __cdecl cv::imshow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,class cv::_InputArray const &)" (?imshow@cv@@YAXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@ABV_InputArray@1@@Z)
+     1>recorder.obj : error LNK2001: unresolved external symbol "void __cdecl cv::medianBlur(class cv::_InputArray const &,class cv::_OutputArray const &,int)" (?medianBlur@cv@@YAXABV_InputArray@1@ABV_OutputArray@1@H@Z)
+     1>recorderGMM.obj : error LNK2001: unresolved external symbol "int __cdecl cv::waitKey(int)" (?waitKey@cv@@YAHH@Z)
+     1>recorderGMM.obj : error LNK2001: unresolved external symbol "public: void __thiscall cv::Mat::copyTo(class cv::_OutputArray const &)const " (?copyTo@Mat@cv@@QBEXABV_OutputArray@2@@Z)
+     1>recorderGMM.obj : error LNK2001: unresolved external symbol "public: virtual bool __thiscall cv::VideoWriter::open(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int,double,class cv::Size_<int>,bool)" (?open@VideoWriter@cv@@UAE_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HNV?$Size_@H@2@_N@Z)
+     1>recorderGMM.obj : error LNK2001: unresolved external symbol "public: virtual __thiscall cv::VideoWriter::~VideoWriter(void)" (??1VideoWriter@cv@@UAE@XZ)
+     1>recorderGMM.obj : error LNK2001: unresolved external symbol "public: __thiscall cv::VideoWriter::VideoWriter(void)" (??0VideoWriter@cv@@QAE@XZ)
+     1>D:\ProjectsVS\magisterka\Capture\Release\Capture.exe : fatal error LNK1120: 21 unresolved externals
+     1>Done Building Project "D:\ProjectsVS\magisterka\Capture\Capture\Capture.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:13.45

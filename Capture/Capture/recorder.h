@@ -4,20 +4,18 @@
 #ifndef _RECORDER_H
 #define _RECORDER_H
 
-using namespace cv;
+//using namespace cv;
 class Recorder {
 
 protected:
-	VideoCapture cap;
-	virtual inline bool exists_test(const std::string & );
-	virtual Scalar count_moving_pixels(Mat &, Mat &, Mat &, Mat &);
+	cv::VideoCapture cap;
+	virtual inline bool existsTest(const std::string & );
+	virtual cv::Scalar countMovingPixels(cv::Mat &, cv::Mat &, cv::Mat &, cv::Mat &);
 public:
 	Recorder();
 	Recorder(int);
 	Recorder(std::string);   
 	virtual int capture()=0;
-	
-
 
 };
 
