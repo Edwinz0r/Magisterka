@@ -7,8 +7,17 @@ using namespace cv;
 
 int main()
 {
-	RecorderGMM A("movement_13.avi");
-	
-	return A.capture();
+	Recorder A("Comp1.avi");
+	BackgndSubtractorGMM bgnSub(A);
+	bgnSub.setShow();
+	try{
+		for(int i=0;i<200;++i){
+			bgnSub.extractFg();
+
+		}
+	}catch(...){std::cout<<"Nie dziala zrodlo"<<std::endl;};
+
+	//system("PAUSE");
+	return 0;
 
 }

@@ -15,11 +15,16 @@
 #include <iostream>
 
 //user defined header files
-#include "recorder.h"
-#include "recorderGMM.h"
+#include "Recorder.h"
+#include "BackgndSubtractor.h"
+#include "BackgndSubtractorGMM.h"
+#include "BackgndSubtractorRunAvg.h"
+#include "Exceptions.h"
+#include "Defines.h"
+#include "Identificator.h"
 //#include "recorderRunAvg.h"
 
 namespace Def{
-const int CODEC=0;
-}
+	const int CODEC=0;
+};
 // TODO: reference additional headers your program requires here
